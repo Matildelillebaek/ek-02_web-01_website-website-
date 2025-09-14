@@ -1,0 +1,156 @@
+/* generel layout */
+main {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.order {
+  display: grid;
+  grid-template-columns: 2fr;
+  margin-top: 20px;
+  order: 1;
+}
+.mincomputer-venstre {
+  order: 0;
+}
+.grid_5-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.grid_2-3,
+.grid_3-2 {
+  display: flex;
+  grid-template-columns: 1fr;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.sidebar {
+  margin-top: 20px;
+}
+.windows-text {
+  order: 0;
+}
+.grid_3-2 .order {
+  order: -1;
+}
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.grid_1-1-1-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.billede1,
+.billede4,
+.billede6 {
+  grid-column: 1 / -1;
+  grid-row: auto;
+}
+/* Desktop */
+@media (min-width: 800px) {
+  .grid_2-1 {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .order {
+    order: -1;
+  }
+  .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .mincomputer-venstre {
+    order: 0;
+  }
+  .grid_5-3 {
+    grid-template-columns: 5fr 3fr;
+    align-items: start;
+  }
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: start;
+  }
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+  .grid_3-2 .order {
+    order: -1;
+  }
+  .grid_1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 20px;
+  }
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .flex_col > img:last-child {
+    margin-top: auto;
+  }
+  .grid_1-1-1-1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+  .billede1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .billede4 {
+    grid-column: 3/5;
+  }
+
+  .billede6 {
+    grid-column: 2/5;
+  }
+  .galleri-text {
+    grid-column: 2;
+  }
+  .galleri {
+    grid-column: 1;
+  }
+}

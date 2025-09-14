@@ -1,0 +1,61 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  background-color: #f4ece6;
+  color: rgb(245, 193, 237);
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f4ece6;
+  color: #2d2d2d;
+  padding: 20px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d2d2d;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #2d2d2d;
+}
+
+.knap {
+  display: inline-block;
+  background-color: #b03060;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+}
+.knap:hover {
+  background-color: rgb(249, 161, 200);
+}
+.footer {
+  background-color: #f9f6f1;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+}
